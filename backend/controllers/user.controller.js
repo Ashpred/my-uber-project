@@ -10,6 +10,12 @@ module.exports.registerUser = async (req, res,next) => {
         return res.status(400).json({errors: errors.array()});
     }
     const {fullname,email,password} = req.body;
+
+    const isUserExists = await usermodel.findOne({email});
+    if(isUserExists){
+        return res.status(400).json({error: "User already exists"});
+    }
+
     const hashPassword = await usermodel.hashPassword(password);
     const firstname = fullname.firstname;
     const lastname = fullname.lastname;
@@ -50,8 +56,9 @@ module.exports.getUserProfile = async (req, res,next) => {
 }
 
 module.exports.logoutUser = async (req, res,next) => {
-    res.clearCookie('token');
+    
     const token = req.cookies.token || req.headers.authorization.split(' ')[1] ;
     await blacklistTokenSchema.create({token});
+    res.clearCookie('token');
     res.status(200).json({message: 'Logged out successfully'});
 }
