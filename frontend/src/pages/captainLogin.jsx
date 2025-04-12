@@ -18,7 +18,7 @@ const captainLogin = () => {
         }
   return (
     <div>
-        <div className='p-7' h-screen  flex flex-col justify-between>
+        <div className='p-7 h-screen w-screen flex flex-col justify-between'>
                 <div>
                 <img className="w-20 mb-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSVCO4w_adxK32rCXFeKq3_NbLcR9b_js14w&s" alt="Image" />
                <form onSubmit={(e)=>handleSubmit(e)} >
@@ -41,7 +41,7 @@ const captainLogin = () => {
                </form>
                 </div>
                 <div>
-                    <Link to='/login' className='bg-[#111] flex items-center justify-center text-white mt-21 font-semibold mb-7 rounded px-4 py-2 w-full text-lg placeholder:text-base'>
+                    <Link to='/login' className='bg-[#111] flex items-center justify-center text-white font-semibold mb-7 rounded px-4 py-2 w-full text-lg placeholder:text-base'>
                         Sign in as a User
                     </Link>
                 </div>

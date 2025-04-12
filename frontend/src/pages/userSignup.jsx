@@ -26,7 +26,7 @@ const userSignup = () => {
     }
   return (
     <div>
-        <div className='p-7' h-screen w-screen flex flex-col justify-between>
+        <div className='p-7 h-screen w-screen flex flex-col justify-between'>
                 <div>
                 <img className="w-16 mb-6" src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Uber_logo_2018.png" alt="Image" />
                <form onSubmit={(e)=>handleSubmit(e)} >
@@ -54,7 +54,7 @@ const userSignup = () => {
                 </div>
 
                 <div>
-                    <p className='text-[10px] leading-tight mt-18 color-[#eeeeee] '>This site is protected by reCAPTCHA and the <span className='underline'>Google Privacy Policy</span> and <span className='underline'>Terms of Service</span> apply.</p>
+                    <p className='text-[10px] leading-tight color-[#eeeeee] '>This site is protected by reCAPTCHA and the <span className='underline'>Google Privacy Policy</span> and <span className='underline'>Terms of Service</span> apply.</p>
                 </div>
 
             </div>
