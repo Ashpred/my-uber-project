@@ -27,9 +27,9 @@ const captainSignup = () => {
 
   return (
     <div>
-            <div className='p-6' h-screen w-screen flex flex-col justify-between>
+            <div className='p-7 h-screen w-screen flex flex-col justify-between'>
                     <div>
-                    <img className="w-16 mb-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSVCO4w_adxK32rCXFeKq3_NbLcR9b_js14w&s" alt="Image" />
+                    <img className="w-20 mb-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSVCO4w_adxK32rCXFeKq3_NbLcR9b_js14w&s" alt="Image" />
                    <form onSubmit={(e)=>handleSubmit(e)} >
                     
                     <h3 className='text-lg font-medium w-full mb-2 mt-2'>What's your name?</h3>
@@ -55,7 +55,7 @@ const captainSignup = () => {
                     </div>
     
                     <div>
-                        <p className='text-[10px] leading-tight mt-18 color-[#eeeeee] '>This site is protected by reCAPTCHA and the <span className='underline'>Google Privacy Policy</span> and <span className='underline'>Terms of Service</span> apply.</p>
+                        <p className='text-[10px] leading-tight color-[#eeeeee] '>This site is protected by reCAPTCHA and the <span className='underline'>Google Privacy Policy</span> and <span className='underline'>Terms of Service</span> apply.</p>
                     </div>
     
                 </div>
