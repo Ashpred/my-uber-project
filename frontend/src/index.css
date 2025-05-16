@@ -1,1 +1,8 @@
 @import "tailwindcss";
+@font-face {
+  font-family: 'UberMove';
+  src: url('/fonts/UberMove.woff2') format('woff2'),
+       url('/fonts/UberMove.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

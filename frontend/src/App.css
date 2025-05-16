@@ -40,3 +40,23 @@
 .read-the-docs {
   color: #888;
 }
+@font-face {
+  font-family: 'Uber Move';
+  src: url('./assets/fonts/UberMove.woff2') format('woff2'),
+       url('./assets/fonts/UberMove.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Uber Move';
+  src: url('./assets/fonts/UberMoveBold.otf') format('otf'),
+       url('./assets/fonts/UberMoveMedium.otf') format('otf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Apply the font globally */
+body {
+  font-family: 'Uber Move', sans-serif;
+}
